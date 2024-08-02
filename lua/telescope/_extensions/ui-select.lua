@@ -42,7 +42,7 @@ return require("telescope").register_extension {
                 client_id = item.ctx.client_id
                 title = item.action.title
               else
-                vim.api.nvim_err_writeln "telescope-ui-select.nvim - Failed to get code action information"
+                vim.api.nvim_err_writeln "telescope-ui-select.nvim - Failed to get item information"
               end
 
               local client = vim.lsp.get_client_by_id(client_id)
